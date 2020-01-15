@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "FaceBook Auto Like Bot",
+    "description": "Auto Like Bot for Facebook",
+    "version": "1.0",
+    "icons": {
+        "96": "logo.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["jquery-3.4.0.min.js", "facebook.js"],
+        "run_at": "document_end"
+    }]
+}
